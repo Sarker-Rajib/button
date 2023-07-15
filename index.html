@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .swich-gear {
+            background: #555557;
+            padding: 20px;
+            max-width: 380px;
+            margin: auto;
+            text-align: center;
+            max-height: 400px;
+            border-radius: 20px;
+        }
+
+        .pin {
+            position: absolute;
+            display: inline-block;
+            height: 15px;
+            width: 15px;
+            background: #9caeb3;
+            border-radius: 50%;
+        }
+
+        .pin.p1 {
+            left: 10px;
+            top: 10px;
+        }
+
+        .pin.p2 {
+            right: 10px;
+            top: 10px;
+        }
+
+        .pin.p3 {
+            right: 10px;
+            bottom: 10px;
+        }
+
+        .pin.p4 {
+            left: 10px;
+            bottom: 10px;
+        }
+
+        .board {
+            background: #fcfcfc;
+            display: flex;
+            justify-content: center;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .circle {
+            position: relative;
+            text-align: center;
+            height: 90px;
+            width: 90px;
+            padding: 20px;
+            display: inline-block;
+            text-decoration: none;
+            border-radius: 50%;
+            cursor: pointer;
+            border: 2px solid #252424;
+            box-shadow: 0px 5px 10px #646464;
+            outline-color: #000;
+        }
+
+        .circle.red {
+            background: #fc0000;
+            background: linear-gradient(130deg, rgba(252, 0, 0, 1) 0%, rgba(167, 92, 92, 0.4) 100%);
+        }
+
+        .circle.green {
+            background: #4CAF50;
+            background: rgb(0, 252, 38);
+            background: linear-gradient(196deg, rgb(37, 170, 57) 0%, rgba(92, 167, 98, 0.7) 100%);
+        }
+
+        .circle span {
+            position: absolute;
+            top: 5px;
+            left: 5px;
+            border-radius: 50%;
+            width: 76px;
+            height: 76px;
+            background: rgb(12, 184, 38);
+            background: linear-gradient(72deg, rgb(24, 168, 45) 0%, rgba(61, 167, 70, 0.205) 100%);
+        }
+
+        .circle.red span {
+            background: rgb(252, 0, 0);
+            background: linear-gradient(243deg, rgba(252, 0, 0, 1) 0%, rgba(167, 92, 92, 0.4) 100%);
+        }
+
+        /* .circle:hover {
+            background: #00000010;
+        } */
+
+        .circle:active {
+            transform: translateY(4px);
+            box-shadow: 0px 0px 0px #005;
+            border-color: #000;
+        }
+
+        circle:focus-visible {
+            outline: none;
+        }
+
+        p {
+            padding-left: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="swich-gear">
+        <div class="board">
+            <div class="wrapper">
+                <div style="padding-block: 20px; display: flex; align-items: center;">
+                    <button class="circle green"><span></span></button>
+                    <p>Open</p>
+                </div>
+                <div style="padding-bottom: 20px; display: flex; align-items: center;">
+                    <button class="circle red"><span></span></button>
+                    <p>Close</p>
+                </div>
+                <div style="padding-bottom: 20px; display: flex; align-items: center;">
+                    <button class="circle green"><span></span></button>
+                    <p>Stop</p>
+                </div>
+            </div>
+
+            <span class="p1 pin"></span>
+            <span class="p2 pin"></span>
+            <span class="p3 pin"></span>
+            <span class="p4 pin"></span>
+        </div>
+    </div>
+</body>
+
+</html>
