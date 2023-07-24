@@ -68,17 +68,6 @@
             outline-color: #000;
         }
 
-        .circle.red {
-            background: #fc0000;
-            background: linear-gradient(130deg, rgba(252, 0, 0, 1) 0%, rgba(167, 92, 92, 0.4) 100%);
-        }
-
-        .circle.green {
-            background: #4CAF50;
-            background: rgb(0, 252, 38);
-            background: linear-gradient(196deg, rgb(37, 170, 57) 0%, rgba(92, 167, 98, 0.7) 100%);
-        }
-
         .circle span {
             position: absolute;
             top: 5px;
@@ -86,8 +75,12 @@
             border-radius: 50%;
             width: 76px;
             height: 76px;
-            background: rgb(12, 184, 38);
             background: linear-gradient(72deg, rgb(24, 168, 45) 0%, rgba(61, 167, 70, 0.205) 100%);
+        }
+
+        .circle.red {
+            background: #fc0000;
+            background: linear-gradient(130deg, rgba(252, 0, 0, 1) 0%, rgba(167, 92, 92, 0.4) 100%);
         }
 
         .circle.red span {
@@ -95,9 +88,52 @@
             background: linear-gradient(243deg, rgba(252, 0, 0, 1) 0%, rgba(167, 92, 92, 0.4) 100%);
         }
 
-        /* .circle:hover {
-            background: #00000010;
-        } */
+        .circle.green span {
+            background: #0cb826;
+        }
+
+        .circle.green {
+            background: #00fc26;
+            background: linear-gradient(196deg, rgb(37, 170, 57) 0%, rgba(92, 167, 98, 0.7) 100%);
+        }
+
+        .circle.yellow {
+            background: rgb(211, 137, 4);
+            background: linear-gradient(90deg, rgba(211, 137, 4, 1) 0%, rgba(213, 109, 3, 1) 100%);
+        }
+
+        .circle.yellow span {
+            background: #d36604;
+        }
+
+        .circle.blue {
+            background: #0073d4;
+            background: linear-gradient(90deg, #0073d4 0%, #0089d4 100%);
+        }
+
+        .circle.blue span {
+            background: #0073d4;
+        }
+
+        .circle.black {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(9, 58, 85, 1) 100%);
+        }
+
+        .circle.black span {
+            background: linear-gradient(270deg, rgba(0, 0, 0, 1) 0%, rgba(9, 58, 85, 1) 100%);
+        }
+
+        .circle.white {
+            background: rgb(159, 203, 223);
+            background: linear-gradient(90deg, rgba(159, 203, 223, 1) 0%, rgba(255, 255, 255, 1) 100%);
+
+        }
+
+        .circle.white span {
+            background: linear-gradient(270deg, rgba(159, 203, 223, 1) 0%, rgba(255, 255, 255, 1) 100%);
+        }
+
 
         .circle:active {
             transform: translateY(4px);
@@ -120,15 +156,15 @@
         <div class="board">
             <div class="wrapper">
                 <div style="padding-block: 20px; display: flex; align-items: center;">
-                    <button class="circle green"><span></span></button>
+                    <button class="circle black"><span></span></button>
                     <p>Open</p>
                 </div>
                 <div style="padding-bottom: 20px; display: flex; align-items: center;">
-                    <button class="circle red"><span></span></button>
+                    <button class="circle white"><span></span></button>
                     <p>Close</p>
                 </div>
                 <div style="padding-bottom: 20px; display: flex; align-items: center;">
-                    <button class="circle green"><span></span></button>
+                    <button class="circle yellow"><span></span></button>
                     <p>Stop</p>
                 </div>
             </div>
